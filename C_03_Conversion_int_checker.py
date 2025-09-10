@@ -12,7 +12,7 @@ def num_check(question):
             response = int(response)
 
             # check that the number is between 1 and 200
-            if 1 <= response <= 1000xlii:
+            if 1 <= response <= 1000:
                 return response
             else:
                 print(error)
@@ -23,9 +23,9 @@ def num_check(question):
 
 # Main Routine Goes Here
 while True:
-     to_factor = num_check("To factor: ")
-     print("You chose to factor", to_factor)
+     to_convert = num_check("To convert: ")
+     print("You chose", to_convert)
 
-     if to_factor == "xxx":
+     if to_convert == "xxx":
          break
 
