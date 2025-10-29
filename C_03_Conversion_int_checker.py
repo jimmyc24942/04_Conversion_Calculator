@@ -1,6 +1,6 @@
-# Ask user for an integer between 1 and 200.
+# Ask user for an integer between 0 and 1000.
 def num_check(question):
-    error = "Please enter a number that is between 1 and 1000 inclusive\n"
+    error = "Please enter a number that is between 1 and 1000000 inclusive\n"
     while True:
 
         response = input(question).lower()
@@ -11,8 +11,8 @@ def num_check(question):
             # ask the user for a number
             response = int(response)
 
-            # check that the number is between 1 and 200
-            if 1 <= response <= 1000:
+            # check that the number is between 0 and 1000000
+            if 0 <= response <= 1000000:
                 return response
             else:
                 print(error)
